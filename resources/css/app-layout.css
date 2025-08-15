@@ -1,0 +1,177 @@
+@import './globals.css';
+
+.app_layout {
+    @apply grid grid-cols-1 md:grid-cols-12 min-h-screen;
+
+    .app_navbar {
+        @apply md:col-span-2;
+    }
+
+    .app_layout_container {
+        @apply md:col-span-10;
+    }
+
+    .container {
+        @apply min-w-full px-4 py-2 mx-auto;
+
+        .breadcrumbs {
+            @apply flex items-center text-sm text-gray-700;
+
+            a {
+                @apply font-bold hover:font-semibold relative text-blue-600;
+
+                &::after {
+                    content: '/';
+                    @apply mx-2 text-gray-500;
+                }
+            }
+
+            span {
+                @apply text-gray-700;
+            }
+        }
+
+        .app_header {
+            @apply grid grid-cols-1 md:grid-cols-3 items-center gap-2 py-4;
+
+            .info {
+                h2 {
+                    @apply text-lg font-bold;
+                }
+
+                .stats {
+                    @apply flex items-center gap-2;
+
+                    span {
+                        @apply text-sm text-gray-600;
+
+                        &:not(:last-child) {
+                            @apply after:content-['|'] after:ml-2;
+                        }
+                    }
+                }
+            }
+
+            .search {
+                @apply md:col-span-1;
+
+                input {
+                    @apply border-1 border-gray-300 rounded-md px-4 py-2 w-full;
+                }
+            }
+
+            .button {
+                @apply md:justify-self-end;
+            }
+        }
+    }
+
+    .custom_form {
+        @apply px-4;
+
+        .header {
+            @apply flex items-center gap-2 bg-gray-800 text-white rounded-t-lg py-2 px-4;
+
+            a {
+                @apply text-white font-bold;
+            }
+        }
+
+        form {
+            @apply bg-slate-100 p-4;
+        }
+    }
+
+    .actions {
+        @apply flex items-center gap-2;
+
+        a.edit,
+        a.danger,
+        button.edit,
+        button.danger {
+            @apply m-0 p-1;
+
+            svg {
+                @apply w-5 h-5;
+            }
+        }
+
+        a.edit,
+        button.edit {
+            @apply bg-transparent border-none;
+
+            svg {
+                @apply text-green-600;
+            }
+        }
+
+        a.delete,
+        button.delete {
+            @apply bg-transparent border-none;
+
+            svg {
+                @apply text-red-600;
+            }
+        }
+    }
+
+    .ck-content {
+        @apply text-base leading-relaxed space-y-4;
+
+        h1, h2, h3, h4, h5, h6 {
+            @apply font-semibold mb-3;
+        }
+
+        h1 {
+            @apply text-2xl;
+        }
+
+        h2 {
+            @apply text-xl;
+        }
+
+        h3 {
+            @apply text-lg;
+        }
+
+        p {
+            @apply leading-relaxed mb-4;
+        }
+
+        a {
+            @apply text-blue-600 underline hover:text-blue-800;
+        }
+
+        ul,
+        ol {
+            @apply list-outside pl-6 mb-4 space-y-2;
+
+            li {
+                @apply leading-relaxed;
+            }
+        }
+
+        strong {
+            @apply font-semibold;
+        }
+
+        em {
+            @apply italic;
+        }
+
+        hr {
+            @apply my-6 border-t border-gray-200;
+        }
+    }
+}
+
+@import './components/buttons.css';
+@import './components/forms.css';
+@import './components/tables.css';
+
+@import './partials/app-navbar.css';
+
+@import './pages/Dashboard.css';
+@import './pages/Users.css';
+@import './pages/ContactMessages.css';
+@import './pages/Tours.css';

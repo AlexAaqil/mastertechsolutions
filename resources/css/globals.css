@@ -1,0 +1,28 @@
+@import "./tailwind.css";
+
+:root {
+    --main-theme-color: #191854;
+    --main-theme-text: white;
+    --subtle-bg: #f3f4f6;
+    --themed-bg: #191854;
+    --themed-text: #191854;
+    --themed-btn: #191854;
+    --themed-btn-hover: #191854;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: roboto, sans-serif, Arial, Helvetica;
+}
+
+.image,
+img {
+    @apply rounded-lg;
+}
+.image {
+    @apply bg-slate-200;
+
+    img {
+        @apply object-cover w-full h-full;
+    }
+}

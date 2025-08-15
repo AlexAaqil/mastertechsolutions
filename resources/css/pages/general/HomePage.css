@@ -1,0 +1,153 @@
+.HomePage {
+    .section_header {
+        @apply font-bold tracking-wider text-center text-4xl mb-6;
+
+        h2 {
+            @apply text-[var(--themed-text)];
+        }
+    }
+
+    .Hero {
+        @apply h-[60dvh] flex items-center justify-center;
+
+        .container {
+            @apply grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-8;
+
+            .content {
+                h1 {
+                    @apply font-bold text-base text-[var(--themed-bg)] mb-2;
+                }
+
+                p {
+                    @apply font-bold text-4xl lg:w-[80%] leading-[1.3];
+                }
+
+                .social_proof {
+                    @apply mt-20 flex gap-8;
+
+                    .stat {
+                        @apply grid;
+
+                        span {
+                            &:first-of-type {
+                                @apply font-semibold text-2xl;
+                            }
+
+                            &:last-of-type {
+                                @apply lowercase text-sm;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .image {
+                @apply lg:justify-self-center h-[45dvh] bg-transparent;
+
+                img {
+                    @apply object-contain;
+                }
+            }
+        }
+    }
+
+    .About {
+        @apply py-16 bg-blue-50;
+
+        .container {
+            @apply grid grid-cols-1 lg:grid-cols-2 gap-8 items-center;
+
+            .image {
+                @apply h-[45dvh] bg-transparent justify-self-center;
+
+                img {
+                    @apply object-contain;
+                }
+            }
+
+            .content {
+                h2 {
+                    @apply text-3xl font-bold mb-4;
+                }
+
+                p {
+                    &:first-of-type {
+                        @apply mb-4;
+                    }
+                }
+
+                .about_actions {
+                    @apply mt-8;
+
+                    a {
+                        @apply inline-block mt-4 bg-[var(--themed-bg)] text-white px-6 py-3 rounded-lg hover:bg-blue-700;
+                    }
+                }
+            }
+        }
+    }
+
+    .Services {
+        @apply py-16;
+
+        .container {
+            .services_list {
+                @apply grid grid-cols-1 lg:grid-cols-3 gap-8;
+
+                .service {
+                    @apply py-8 px-6 text-center bg-blue-50 rounded-2xl;
+
+                    .icon {
+                        @apply mb-2 flex justify-center;
+
+                        svg {
+                            @apply h-[30px] w-[30px];
+                        }
+                    }
+
+                    h3 {
+                        @apply text-[var(--themed-text)] font-bold text-xl mb-2;
+                    }
+                }
+            }
+        }
+    }
+
+    .WhyChooseUs {
+        @apply py-16;
+
+        .container {
+            .choose_list {
+                @apply grid md:grid-cols-3 gap-8;
+
+                .choice {
+                    @apply p-6 bg-white rounded-lg shadow-lg;
+
+                    h3 {
+                        @apply font-semibold text-lg mb-2;
+                    }
+                }
+            }
+        }
+    }
+
+    .CTA {
+        @apply py-16 bg-[var(--themed-bg)] text-white text-center;
+
+        h2 {
+            @apply text-3xl font-bold mb-4;
+        }
+
+        p {
+            @apply mb-6 text-lg;
+        }
+
+        .cta_actions {
+            @apply mt-8;
+
+            a {
+                @apply bg-white text-[var(--themed-text)] px-[24px] py-[16px] rounded-lg font-semibold hover:bg-gray-100;
+            }
+        }
+    }
+}

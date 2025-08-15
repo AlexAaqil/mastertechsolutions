@@ -13,7 +13,12 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Master Tech Solutions Center'),
+    'slogan' => "One-stop shop to establish and grow your digital presence",
+    'email' => "info@mastertechsolutionscenter.com",
+    'phone_number' => "+254 707 055 963",
+    'address' => "Lunga Lunga Square, Nairobi",
+    'location' => "Nairobi, Kenya",
 
     /*
     |--------------------------------------------------------------------------
