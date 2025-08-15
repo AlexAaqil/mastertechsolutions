@@ -3,7 +3,11 @@
         <div class="container">
             <div class="content">
                 <h1>Master Tech Solutions Center</h1>
-                <p>One-stop shop to establish and grow your digital presence</p>
+                <p>One stop shop to establish and grow your digital presence</p>
+
+                <div class="hero_action">
+                    <a href="{{ Route::has('contact-page') }}">Book a Free Consultation</a>
+                </div>
 
                 <div class="social_proof">
                     <div class="stat">
@@ -18,7 +22,12 @@
 
                     <div class="stat">
                         <span>200+</span>
-                        <span>Complete Projects</span>
+                        <span>Delivered Projects</span>
+                    </div>
+
+                    <div class="stat">
+                        <span>35%</span>
+                        <span>Lower Maintenance</span>
                     </div>
                 </div>
             </div>
@@ -148,10 +157,15 @@
     </section>
 
     <section class="CTA">
-        <h2>Ready to Transform Your Business?</h2>
-        <p>Let’s discuss how Master Tech Solutions Center can help you grow, secure, and innovate.</p>
-        <div class="cta_actions">
-            <a href="{{ Route::has('contact-page') ? route('contact-page') : '#' }}" wire:navigate>Book a Free Consultation</a>
+        <div class="container">
+            <div class="content">
+                <h2>Ready to Transform Your Business?</h2>
+                <p>Let’s discuss how Master Tech Solutions Center can help you grow, secure, and innovate.</p>
+
+                <div class="cta_actions">
+                    <a href="{{ Route::has('contact-page') ? route('contact-page') : '#' }}" wire:navigate>Book a Free Consultation</a>
+                </div>
+            </div>
         </div>
     </section>
 </div>

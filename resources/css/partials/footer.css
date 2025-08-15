@@ -1,5 +1,5 @@
 footer {
-    @apply bg-[var(--themed-bg)] text-white pt-12 pb-6;
+    @apply bg-black text-white pt-12 pb-6;
 
     .container {
         @apply px-4 md:px-16 mx-auto;
