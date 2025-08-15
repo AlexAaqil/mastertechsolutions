@@ -105,12 +105,8 @@
                 .service {
                     @apply py-8 px-6 bg-white shadow-lg rounded-2xl;
 
-                    .icon {
-                        @apply mb-4 flex justify-center items-center bg-yellow-600 text-white w-[48px] h-[48px] p-[8px] rounded-lg;
-
-                        svg {
-                            @apply h-full w-full fill-white;
-                        }
+                    .image {
+                        @apply w-full h-[30dvh] mb-4;
                     }
 
                     h3 {

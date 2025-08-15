@@ -71,8 +71,8 @@
 
             <div class="services_list">
                 <div class="service">
-                    <div class="icon">
-                        <x-svgs.cyber-security />
+                    <div class="image">
+                        <img src="{{ asset('assets/images/cyber-security.jpg') }}" alt="Cyber Security" />
                     </div>
                     <div class="content">
                         <h3>Cyber Security</h3>
@@ -81,8 +81,8 @@
                 </div>
 
                 <div class="service">
-                    <div class="icon">
-                        <x-svgs.web-development />
+                    <div class="image">
+                        <img src="{{ asset('assets/images/web-development.jpg') }}" alt="Web Development" />
                     </div>
                     <div class="content">
                         <h3>Web Development</h3>
@@ -91,8 +91,8 @@
                 </div>
 
                 <div class="service">
-                    <div class="icon">
-                        <x-svgs.mobile-app-development />
+                    <div class="image">
+                        <img src="{{ asset('assets/images/mobile-app-development.jpg') }}" alt="Mobile App Development" />
                     </div>
                     <div class="content">
                         <h3>Mobile App Development</h3>
@@ -101,8 +101,8 @@
                 </div>
 
                 <div class="service">
-                    <div class="icon">
-                        <x-svgs.software-engineering />
+                    <div class="image">
+                        <img src="{{ asset('assets/images/software-development.jpg') }}" alt="Software Development" />
                     </div>
                     <div class="content">
                         <h3>Software Development</h3>
@@ -111,8 +111,8 @@
                 </div>
 
                 <div class="service">
-                    <div class="icon">
-                        <x-svgs.networking />
+                    <div class="image">
+                        <img src="{{ asset('assets/images/networking.jpg') }}" alt="Networking" />
                     </div>
                     <div class="content">
                         <h3>Networking</h3>
@@ -121,8 +121,8 @@
                 </div>
 
                 <div class="service">
-                    <div class="icon">
-                        <x-svgs.graphic-design />
+                    <div class="image">
+                        <img src="{{ asset('assets/images/graphic-design.jpg') }}" alt="Graphic Design" />
                     </div>
                     <div class="content">
                         <h3>Graphic Design</h3>
