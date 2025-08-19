@@ -13,7 +13,7 @@ class Admin extends Component
     {
         $count_super_admins = User::where('role', USER_ROLES::SUPER_ADMIN)->count();
         $count_admins = User::where('role', USER_ROLES::ADMIN)->count();
-        $count_users = User::whereNotIn('role', [USER_ROLES::SUPER_ADMIN])->count();
+        $count_users = User::whereNotIn('role', [USER_ROLES::SUPER_ADMIN, USER_ROLES::ADMIN])->count();
 
         $count_messages = ContactMessage::count();
         $count_unread_messages = ContactMessage::where('is_read', false)->count();
