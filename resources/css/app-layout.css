@@ -1,42 +1,15 @@
-@import './globals.css';
+@import "./globals.css";
 
 .app_layout {
-    @apply grid grid-cols-1 md:grid-cols-12 min-h-screen;
-
-    .app_navbar {
-        @apply md:col-span-2;
-    }
-
-    .app_layout_container {
-        @apply md:col-span-10;
-    }
-
     .container {
         @apply min-w-full px-4 py-2 mx-auto;
 
-        .breadcrumbs {
-            @apply flex items-center text-sm text-gray-700;
-
-            a {
-                @apply font-bold hover:font-semibold relative text-blue-600;
-
-                &::after {
-                    content: '/';
-                    @apply mx-2 text-gray-500;
-                }
-            }
-
-            span {
-                @apply text-gray-700;
-            }
-        }
-
-        .app_header {
+        .header {
             @apply grid grid-cols-1 md:grid-cols-3 items-center gap-2 py-4;
 
             .info {
                 h2 {
-                    @apply text-lg font-bold;
+                    @apply font-bold text-lg;
                 }
 
                 .stats {
@@ -114,63 +87,15 @@
             }
         }
     }
-
-    .ck-content {
-        @apply text-base leading-relaxed space-y-4;
-
-        h1, h2, h3, h4, h5, h6 {
-            @apply font-semibold mb-3;
-        }
-
-        h1 {
-            @apply text-2xl;
-        }
-
-        h2 {
-            @apply text-xl;
-        }
-
-        h3 {
-            @apply text-lg;
-        }
-
-        p {
-            @apply leading-relaxed mb-4;
-        }
-
-        a {
-            @apply text-blue-600 underline hover:text-blue-800;
-        }
-
-        ul,
-        ol {
-            @apply list-outside pl-6 mb-4 space-y-2;
-
-            li {
-                @apply leading-relaxed;
-            }
-        }
-
-        strong {
-            @apply font-semibold;
-        }
-
-        em {
-            @apply italic;
-        }
-
-        hr {
-            @apply my-6 border-t border-gray-200;
-        }
-    }
 }
 
-@import './components/buttons.css';
-@import './components/forms.css';
-@import './components/tables.css';
+@import "./components/forms.css";
+@import "./components/buttons.css";
+/* @import "./components/cards.css"; */
+@import "./components/tables.css";
 
-@import './partials/app-navbar.css';
+@import "./partials/app-navbar.css";
 
-@import './pages/Dashboard.css';
-@import './pages/Users.css';
-@import './pages/ContactMessages.css';
+@import "./pages/Dashboard.css";
+@import "./pages/Users.css";
+@import "./pages/ContactMessages.css";

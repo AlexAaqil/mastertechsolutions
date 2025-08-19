@@ -150,37 +150,24 @@
     }
 
     .CTA {
-        .container {
-            @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+        @apply py-16 mb-16 bg-black text-white rounded-2xl lg:w-[80dvw] lg:mx-auto flex items-center justify-center;
 
-            .image {
-                @apply h-[450px] justify-self-center;
+        .container {
+            @apply flex items-center justify-center text-center;
+
+            h2 {
+                @apply text-3xl font-bold mb-6;
             }
 
-            .content {
-                .text {
-                    p {
-                        @apply max-w-2xl;
-                    }
+            p {
+                @apply mb-6 text-lg lg:w-[80%] lg:mx-auto;
+            }
 
-                    .trust_badges {
-                        @apply  grid grid-cols-5 gap-4 items-center mt-6 mb-8;
-                        .image {
-                            @apply w-[100px] h-[100px] bg-transparent;
+            .cta_actions {
+                @apply mt-12;
 
-                            img {
-                                @apply w-full h-full object-contain;
-                            }
-                        }
-                    }
-
-                    .buttons_group {
-                        @apply mt-8;
-
-                        a.btn_secondary {
-                            @apply bg-transparent border border-[var(--themed-btn)] text-[var(--themed-btn)];
-                        }
-                    }
+                a {
+                    @apply bg-yellow-600 text-white px-[24px] py-[16px] rounded-lg font-bold tracking-wide hover:bg-yellow-800;
                 }
             }
         }

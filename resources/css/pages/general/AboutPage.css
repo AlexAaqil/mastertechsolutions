@@ -1,97 +1,89 @@
 .AboutPage {
-    .themed_text,
-    p.title {
-        @apply text-[var(--themed-text)] font-bold tracking-wide;
-    }
+    @apply min-h-screen bg-white;
 
-    p.title {
-        @apply mt-6 mb-2 text-2xl;
-    }
+    .AboutHero {
+        @apply min-h-[50dvh] flex items-center justify-center bg-gradient-to-b from-slate-50 to-white;
 
-    .About {
         .container {
-            @apply grid grid-cols-1 md:grid-cols-2 gap-4;
+            .hero_text {
+                @apply md:text-center max-w-4xl mx-auto;
 
-            .content {
-                .text {
-                    @apply lg:w-[85%];
+                h1 {
+                    @apply font-semibold text-xl md:text-2xl text-yellow-600;
+                }
+
+                .sub_title {
+                    @apply text-sm md:text-base text-gray-600 mt-2;
+                }
+
+                .punchline {
+                    @apply font-bold text-2xl md:text-4xl leading-[1.3] md:leading-[1.3] mt-6 mx-auto text-gray-900;
+                }
+            }
+        }
+    }
+
+    .OurStory {
+        @apply bg-gray-50 py-16;
+
+        .story_content {
+            @apply grid grid-cols-1 lg:grid-cols-2 gap-12 items-center;
+
+            .text_content {
+                h2 {
+                    @apply font-bold text-3xl mb-6 text-yellow-600;
+                }
+
+                p {
+                    @apply text-gray-600 mb-4;
                 }
             }
 
-            .images {
-                @apply lg:grid lg:grid-cols-2 gap-8;
+            .story_stats {
+                @apply grid grid-cols-2 gap-8 bg-white p-8 rounded-xl shadow-sm;
 
-                .image {
-                    @apply bg-transparent;
-                }
+                .stat {
+                    @apply text-center;
 
-                .image_one {
-                    @apply h-[45dvh];
-                }
-
-                .other_images {
-                    @apply lg:space-y-2;
-
-                    .image_two,
-                    .image_three {
-                        @apply hidden lg:block;
+                    span:first-of-type {
+                        @apply block text-4xl font-bold text-yellow-600;
                     }
 
-                    .image_two {
-                        @apply h-[19dvh];
-                    }
-
-                    .image_three {
-                        @apply h-[25dvh];
+                    span:last-of-type {
+                        @apply text-gray-600;
                     }
                 }
             }
         }
     }
 
-    .MissionStatements {
-        @apply bg-[var(--subtle-bg)];
+    .OurValues {
+        @apply py-16;
 
-        .container {
-            @apply grid grid-cols-1 lg:grid-cols-2 gap-8;
+        .section_header {
+            @apply tracking-wide text-center mb-6;
 
-            .image {
-                @apply h-[60dvh];
-            }
-
-            .content {
-                @apply lg:py-4;
+            h2 {
+                @apply text-yellow-600 text-3xl font-bold;
             }
         }
-    }
 
-    .MoreInfo {
-        .container {
-            .section_header {
-                @apply text-center;
-            }
+        .values {
+            @apply grid grid-cols-1 md:grid-cols-3 gap-8;
 
-            .more_content {
-                @apply grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8;
+            .value {
+                @apply p-6 rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow duration-300;
 
-                .content {
-                    @apply lg:w-[88%];
-
-                    ul {
-                        @apply list-disc pl-6;
-
-                        li {
-                            @apply mb-2;
-
-                            span {
-                                @apply font-bold italic tracking-wide;
-                            }
-                        }
-                    }
+                .icon {
+                    @apply mb-4 text-yellow-600;
                 }
 
-                .image {
-                    @apply h-[70dvh] w-[95%] mx-auto;
+                h3 {
+                    @apply font-bold text-xl mb-3;
+                }
+
+                p {
+                    @apply text-gray-600;
                 }
             }
         }

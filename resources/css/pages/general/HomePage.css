@@ -14,6 +14,8 @@
             @apply grid grid-cols-1 lg:grid-cols-2 items-center justify-between gap-12;
 
             .content {
+                @apply lg:px-4;
+
                 h1 {
                     @apply font-semibold tracking-wider text-base text-yellow-600 mb-2;
                 }
@@ -50,7 +52,7 @@
             }
 
             .image {
-                @apply lg:justify-self-center h-[45dvh] bg-transparent;
+                @apply lg:justify-self-center h-[45dvh] bg-transparent lg:px-4;
 
                 img {
                     @apply object-contain;
@@ -130,30 +132,6 @@
                     h3 {
                         @apply font-semibold text-lg mb-2;
                     }
-                }
-            }
-        }
-    }
-
-    .CTA {
-        @apply py-16 mb-16 bg-black text-white rounded-2xl lg:w-[80dvw] lg:mx-auto flex items-center justify-center;
-
-        .container {
-            @apply flex items-center justify-center text-center;
-
-            h2 {
-                @apply text-3xl font-bold mb-6;
-            }
-
-            p {
-                @apply mb-6 text-lg lg:w-[80%] lg:mx-auto;
-            }
-
-            .cta_actions {
-                @apply mt-12;
-
-                a {
-                    @apply bg-yellow-600 text-white px-[24px] py-[16px] rounded-lg font-bold tracking-wide hover:bg-yellow-800;
                 }
             }
         }

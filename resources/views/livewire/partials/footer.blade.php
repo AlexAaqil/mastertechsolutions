@@ -20,8 +20,8 @@
                 <div class="links">
                     <a href="{{ Route::has('home-page') ? route('home-page') : '#' }}" wire:navigate>Home</a>
                     <a href="{{ Route::has('about-page') ? route('about-page') : '#' }}" wire:navigate>About</a>
-                    <a href="{{ Route::has('services-page') ? route('services-page') : '#' }}" wire:navigate>Services</a>
-                    <a href="{{ Route::has('contact-page') ? route('about-page') : '#' }}" wire:navigate>Contact</a>
+                    {{-- <a href="{{ Route::has('services-page') ? route('services-page') : '#' }}" wire:navigate>Services</a> --}}
+                    <a href="{{ Route::has('contact-page') ? route('contact-page') : '#' }}" wire:navigate>Contact</a>
                 </div>
             </div>
 

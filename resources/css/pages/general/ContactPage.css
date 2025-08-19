@@ -31,12 +31,11 @@
                             @apply flex items-start space-x-4;
 
                             svg {
-                                @apply w-6 h-6 stroke-[var(--themed-text)];
+                                @apply w-6 h-6 stroke-yellow-600;
                             }
                             svg.whatsapp_svg {
-                                @apply fill-[var(--themed-text)];
+                                @apply fill-yellow-600;
                             }
-
                             h4 {
                                 @apply font-medium;
                             }
@@ -55,12 +54,12 @@
                                 }
 
                                 input, textarea {
-                                    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[(var--themed-btn)] focus:border-transparent;
+                                    @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-600 focus:border-transparent;
                                 }
                             }
 
                             button {
-                                @apply w-full bg-[(var--themed-btn)] text-white py-2 px-4 rounded-lg hover:bg-[(var--themed-btn-hover)] transition-colors duration-200;
+                                @apply w-full bg-yellow-600 text-white py-2 px-4 rounded-lg hover:bg-yellow-700 transition-colors duration-200;
                             }
                         }
                     }

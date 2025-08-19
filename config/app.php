@@ -14,11 +14,18 @@ return [
     */
 
     'name' => env('APP_NAME', 'Master Tech Solutions Center'),
-    'slogan' => "One-stop shop to establish and grow your digital presence",
+    'slogan' => "One Stop Shop to Establish and Grow Your Digital Presence",
     'email' => "info@mastertechsolutionscenter.com",
-    'phone_number' => "+254 707 055 963",
     'address' => "Lunga Lunga Square, Nairobi",
     'location' => "Nairobi, Kenya",
+    'phone_number' => "+254 707 055 963",
+    'secondary_phone_number' => '',
+    'whatsapp_number' => '+254 707 055 963',
+    'instagram' => 'https://www.instagram.com/',
+    'facebook' => 'https://www.facebook.com/',
+    'linkedin' => 'https://www.linkedin.com/in/',
+    'whatsapp' => 'https://wa.me/254707055963',
+    'tiktok' => 'https://www.tiktok.com/',
 
     /*
     |--------------------------------------------------------------------------

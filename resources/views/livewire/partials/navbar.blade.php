@@ -1,7 +1,7 @@
 <nav x-data="{ open: false }" @click.outside="open = false" class="guest_nav">
     <div class="container">
         <div class="branding">
-            <a href="{{ Route::has('home-page') ? route('home-page') : '#' }}">
+            <a href="{{ Route::has('home-page') ? route('home-page') : '#' }}" wire:navigate>
                 <x-app-logo width="80" height="80" />
                 {{-- {{ config('app.name') }} --}}
             </a>
@@ -24,13 +24,11 @@
                 <a href="{{ Route::has('contact-page') ? route('contact-page') : '#' }}" class="{{ Route::is('contact-page') ? 'active' : '' }}" wire:navigate>Contact</a>
             </div>
 
-            {{-- <div class="other_links">
+            <div class="other_links">
                 @auth
                     <button wire:click="logout" class="btn btn_danger">Logout</button>
-                @else
-                    <a href="{{ Route::has('tours-page') ? route('tours-page') : '#' }}">Plan Your Safari</a>
                 @endauth
-            </div> --}}
+            </div>
         </div>
     </div>
 </nav>
